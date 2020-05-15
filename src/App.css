@@ -1,0 +1,9 @@
+.movies {
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.titleBar {
+  flex: 1;
+}
