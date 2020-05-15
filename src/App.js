@@ -72,14 +72,14 @@ class App extends Component {
                 type="search"
                 value={searchText}
                 onChange={this.searchTextChanged}
-                placeholder="Sear"
+                placeholder="Search"
               ></Input>
             </form>
           </Toolbar>
         </AppBar>
         <div className="movies">
           {movies.map((movie) => (
-            <MovieCard
+            <MovieCard className="movieCard"
               key={movie.id}
               movie={movie}
               selectMovie={this.selectMovie}
