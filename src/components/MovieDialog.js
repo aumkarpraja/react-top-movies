@@ -14,37 +14,29 @@ export default class MovieDialog extends React.Component {
     let content = null;
 
     // Avoid null errors on title if movie does not exist
-    if (movie) {
-      title = <DialogTitle id="form-dialog-title">{movie.title}</DialogTitle>;
+    if ( movie ) {
+      title = <DialogTitle id="form-dialog-title">{ movie.title }</DialogTitle>;
       content = (
         <DialogContent>
           <DialogContentText>
-            Release Date {movie.release_date}
+            Release Date: { movie.release_date }
             <br />
             <br />
-            {movie.overview}
+            { movie.overview }
           </DialogContentText>
         </DialogContent>
       );
     }
     return (
       <div>
-        <Button
-          variant="outlined"
-          color="primary"
-          onClick={this.handleClickOpen}
-        >
+        <Button variant="outlined" color="primary" onClick={ this.handleClickOpen }>
           Open form dialog
         </Button>
-        <Dialog
-          open={!!movie}
-          onClose={handleClose}
-          aria-labelledby="form-dialog-title"
-        >
-          {title}
-          {content}
+        <Dialog open={ !!movie } onClose={ handleClose } aria-labelledby="form-dialog-title">
+          { title }
+          { content }
           <DialogActions>
-            <Button onClick={handleClose} color="primary">
+            <Button onClick={ handleClose } color="primary">
               Close
             </Button>
           </DialogActions>
