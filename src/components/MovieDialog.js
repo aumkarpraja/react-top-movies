@@ -29,9 +29,6 @@ export default class MovieDialog extends React.Component {
     }
     return (
       <div>
-        <Button variant="outlined" color="primary" onClick={ this.handleClickOpen }>
-          Open form dialog
-        </Button>
         <Dialog open={ !!movie } onClose={ handleClose } aria-labelledby="form-dialog-title">
           { title }
           { content }
