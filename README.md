@@ -4,10 +4,16 @@ This is essentially my first stab at React, there may be a few weird details her
 
 ## Running the application
 
+Please note that in order to run this application, you will need to generate an API key from the `The Movie Database` site. You can get an API key by creating an account, going into the  settings and clicking the API bar on the left hand side of the account page.
+
 1. cd into the root directory of this project
-2. Run `npm install`.
-3. Run `npm start`.
-4. Access application via `http://localhost:3000`
+2. Generate an `apiKey.js` file in the src directory and paste in your key as follows
+```
+export default '[key here]';
+```
+3. Run `npm install`.
+4. Run `npm start`.
+5. Access application via `http://localhost:3000`
 
 ## Demo
 Check it out [here.](https://www.aumkar.ca/react-top-movies/)
