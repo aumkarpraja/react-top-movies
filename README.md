@@ -10,4 +10,4 @@ This is essentially my first stab at React, there may be a few weird details her
 4. Access application via `http://localhost:3000`
 
 ## Demo
-Check it out [here.](https://www.aumkar.ca/ReactTopMovies/)
+Check it out [here.](https://www.aumkar.ca/react-top-movies/)
